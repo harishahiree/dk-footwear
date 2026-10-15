@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the DK Footwear collection.">
+  <title>Collection | DK Footwear</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A BETTER STEP STARTS HERE <span>✦</span> DK FOOTWEAR</div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">DK</span><span>DK <b>FOOTWEAR</b><small>STEP INTO STYLE</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links"><a href="index.html">Home</a><a class="active" href="products.html">Collection</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a><a class="cart-link" href="#cart">Bag <span class="cart-count">0</span></a></nav>
+  </header>
+  <main>
+    <section class="page-hero"><p class="eyebrow">THE DK EDIT</p><h1>Find your <em>pair.</em></h1><p>Explore versatile styles for every day and every plan.</p></section>
+    <section class="section section-pad collection-layout">
+      <aside class="filters">
+        <label class="search-label" for="product-search">Search collection</label><input id="product-search" type="search" placeholder="Try sneakers...">
+        <p class="filter-title">CATEGORIES</p>
+        <div class="category-list"><button class="filter-button active" data-category="All">All footwear</button><button class="filter-button" data-category="Sneakers">Sneakers</button><button class="filter-button" data-category="Casual">Casual shoes</button><button class="filter-button" data-category="Formal">Formal shoes</button><button class="filter-button" data-category="Sandals">Sandals</button></div>
+        <div class="cart-panel" id="cart"><div class="cart-heading"><h3>Your bag</h3><span class="cart-count">0</span></div><div data-cart-items><p class="muted small">Your bag is empty. Add a pair to get started.</p></div><div class="cart-total"><span>Estimated total</span><b data-cart-total>₹0</b></div><button class="button button-gold full-width" data-checkout>Order via WhatsApp ↗</button><p class="muted tiny">Order details will open in WhatsApp for confirmation.</p></div>
+      </aside>
+      <div class="collection-main"><div class="collection-toolbar"><p><span data-result-count>8</span> styles to explore</p><label>Sort <select id="product-sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div><div class="product-grid collection-grid" data-all-products></div><p class="empty-state" data-empty-state hidden>No products found. Try another search or category.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">DK</span><span>DK <b>FOOTWEAR</b><small>STEP INTO STYLE</small></span></a><p>Designed for your everyday journey.</p><div class="footer-links"><a href="index.html">Home</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a></div><small>© <span data-year></span> DK Footwear. Demo catalogue—confirm stock and prices before ordering.</small></footer>
+</body>
+</html>
